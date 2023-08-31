@@ -6,22 +6,17 @@ import '../../Resources/mytheme.dart';
 class CommonCardWidget extends StatefulWidget with ChangeNotifier{
    CommonCardWidget({super.key});
 
-
   @override
   State<CommonCardWidget> createState() => _CommonCardWidgetState();
    removeWidget(){
      if(commonUtils.cardDatas!.isNotEmpty){
        commonUtils.cardDatas!.removeLast();
        notifyListeners();
-
      }
-
    }
 }
 
 class _CommonCardWidgetState extends State<CommonCardWidget> {
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +54,6 @@ class _CommonCardWidgetState extends State<CommonCardWidget> {
                              TextButton(onPressed: widget.removeWidget, child: Icon(Icons.delete)),
                              TextButton(onPressed: (){}, child: Icon(Icons.delete)),
                              TextButton(onPressed: (){}, child: Icon(Icons.delete))
-
                            ],
                          )
 

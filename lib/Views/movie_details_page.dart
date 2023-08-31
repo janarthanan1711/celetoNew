@@ -73,7 +73,6 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
                     Row(
                       children: const [
                         Text('Movie Name',style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.bold),),
-
                       ],
                     ),
                     const SizedBox(height: 10,),
